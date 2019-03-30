@@ -21,12 +21,12 @@
 
 <body>
 
-    <div class="d-flex" id="wrapper">
+    <div class="d-flex flex-column" id="wrapper">
 
         <div class="selection1">
             <select class="custom-select">
                 <option selected>Who are you ?</option>
-                <option value="1">Customers</option>
+                <option value="1">Consumer</option>
                 <option value="2">Citizen</option>
                 <option value="3">Business</option>
             </select>
@@ -34,15 +34,24 @@
 
         <div class="selection2">
             <select class="custom-select">
-                <option selected>What kind of problematic you met ?</option>
-                <option value="1">Customers</option>
-                <option value="2">Citizen</option>
-                <option value="3">Business</option>
+                <option selected>What kind of problematic did you met ?</option>
+                <option value="1">Privacy</option>
+                <option value="2">Accessibility</option>
+                <option value="3">Customer service</option>
             </select>
         </div>
 
-        <div>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Go further</button>
+        <div class="urlBox">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Website URL</span>
+                </div>
+                <input type="text" class="form-control" placeholder="https://www.example.com">
+            </div>
+        </div>
+
+        <div class="buttonBox">
+            <a href=""><button type="button" class="btn btn-secondary btn-lg btn-block">Next</button></a>
         </div>
     </div>
     <!-- /#wrapper -->
