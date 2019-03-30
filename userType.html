@@ -16,6 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
 
 </head>
 
@@ -32,12 +33,12 @@
             </select>
         </div>
 
-        <div class="selection2">
+        <div class="selection2" id="issueInput">
             <select class="custom-select">
-                <option selected>What kind of problematic did you met ?</option>
-                <option value="1">Privacy</option>
-                <option value="2">Accessibility</option>
-                <option value="3">Customer service</option>
+                <option selected>What kind of issue did you met ?</option>
+                <option id="typeList" value="1">Privacy</option>
+                <option id="typeList" value="2">Accessibility</option>
+                <option id="typeList" value="3">Customer service</option>
             </select>
         </div>
 
@@ -51,7 +52,7 @@
         </div>
 
         <div class="buttonBox">
-            <a href=""><button type="button" class="btn btn-secondary btn-lg btn-block">Next</button></a>
+            <a href="./ExtensionPage2(Submit).html"><button type="button" class="btn btn-secondary btn-lg btn-block">Next</button></a>
         </div>
     </div>
     <!-- /#wrapper -->
@@ -59,6 +60,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="userType.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
