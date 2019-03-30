@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "European Commission feedback tool",
+    "version": "0.0.1",
+    "icons": {
+        "48": "./assets/extension_logo.png"
+    },
+    "author": "Marco De Bona",
+    "description": "Easily send your feedback to the EU Commission about obstacle to your rights.\n\n\nIcon made by Freepik from www.flaticon.com ",
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_title": "EU Commission feedback tool"
+    },
+    "permissions": ["tabs"]
+}
