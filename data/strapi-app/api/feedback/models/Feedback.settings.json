@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "feedback",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "userType": {
+      "default": "",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "citizen",
+        "consumer",
+        "business"
+      ]
+    },
+    "obstacleType": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "physical",
+        "virtual"
+      ]
+    },
+    "description": {
+      "default": "",
+      "type": "text",
+      "required": true
+    },
+    "url": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}
