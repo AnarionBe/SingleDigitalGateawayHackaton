@@ -2,22 +2,28 @@ const citizen = [
     "privacy",
     "incorrect information",
     "information hard to find",
+    "Recognition of diplomas (to take up work)",
+    "Healthcare",
     "other"
 ];
 
 const consumer = [
     "personal infos not accepted",
-    "things",
-    "an other things like that",
+    "Unemployment benefits",
+    "Discriminatory fees (tourism)",
     "other"
+];
+
+const business = [
+    "Equal access for doing business",
+    "Access to single market to sell products",
+    "other"an other things like that
 ];
 
 chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
     const url = tabs[0].url;
     document.getElementById("url").value = url;
 });
-
-const business = ["stuff", "other"];
 
 document.getElementById("userType").addEventListener("change", e => {
     const issueSelect = document.getElementById("issueType");
@@ -51,4 +57,33 @@ document.getElementById("userType").addEventListener("change", e => {
             });
             break;
     }
+});
+
+const saveData = (function() {
+    const a = document.createElement("a");
+    document.body.appendChild(a);
+    a.style = "display: none";
+    return function(data, fileName) {
+        var json = JSON.stringify(data),
+            blob = new Blob([json], { type: "octet/stream" }),
+            url = window.URL.createObjectURL(blob);
+        a.href = url;
+        a.download = fileName;
+        a.click();
+        window.URL.revokeObjectURL(url);
+    };
+})();
+
+document.getElementById("buttonSend").addEventListener("click", e => {
+    const data = {
+        url: document.getElementById("url").value,
+        userType: document.getElementById("userType").selectedIndex.innerHTML,
+        issue: document.getElementById("issueType").selectedIndex.innerHTML,
+        description: document.getElementById("description").value
+    };
+
+    const fileName = "data.json";
+    console.log(data);
+
+    saveData(data, fileName);
 });
