@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Type of user</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+    <div class="d-flex flex-column" id="wrapper">
+
+        <div class="selection1">
+            <select class="custom-select">
+                <option selected>Who are you ?</option>
+                <option value="1">Consumer</option>
+                <option value="2">Citizen</option>
+                <option value="3">Business</option>
+            </select>
+        </div>
+
+        <div class="selection2" id="issueInput">
+            <select class="custom-select">
+                <option selected>What kind of issue did you met ?</option>
+                <option id="typeList" value="1">Privacy</option>
+                <option id="typeList" value="2">Accessibility</option>
+                <option id="typeList" value="3">Customer service</option>
+            </select>
+        </div>
+
+        <div class="urlBox">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="">Website URL</span>
+                </div>
+                <input type="text" class="form-control" placeholder="https://www.example.com">
+            </div>
+        </div>
+
+        <div class="buttonBox">
+            <a href="./ExtensionPage2(Submit).html"><button type="button" class="btn btn-secondary btn-lg btn-block">Next</button></a>
+        </div>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="userType.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>
