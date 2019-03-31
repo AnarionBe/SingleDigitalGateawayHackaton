@@ -1,1 +1,1 @@
-# SingleDigitalGateawayHackaton
+# SingleDigitalGateawayHackathon
