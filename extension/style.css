@@ -1,6 +1,5 @@
 body {
     font-family: "Dosis", sans-serif;
-
     margin: 0px;
 }
 
@@ -8,8 +7,6 @@ body {
     width: 500px;
     height: 300px;
     margin: 10px;
-    border: 1px solid black;
-    border-radius: 30px;
 }
 
 .selection1 {
@@ -50,6 +47,44 @@ textarea {
     margin-left: 20px;
 }
 
+#label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
 #url {
+    font-size: 15px;
     width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#userType {
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#issueType {
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    display: none;
+}
+
+#description {
+    border-radius: 10px;
+    font-size: 15px;
+    overflow: scroll;
+    padding: 5px;
+}
+
+button {
+    border-radius: 10px;
+    padding: 5px;
+    height: 40px;
+    width: 100px;
+    background-color: #004494;
+    border-color: #004494;
 }

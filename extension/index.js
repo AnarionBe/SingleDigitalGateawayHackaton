@@ -17,7 +17,7 @@ const consumer = [
 const business = [
     "Equal access for doing business",
     "Access to single market to sell products",
-    "other"an other things like that
+    "other"
 ];
 
 chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
@@ -27,6 +27,9 @@ chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {
 
 document.getElementById("userType").addEventListener("change", e => {
     const issueSelect = document.getElementById("issueType");
+    if (document.getElementById("userType").selectedIndex > 0)
+        issueSelect.style.display = "inline";
+    else issueSelect.style.display = "none";
     while (document.getElementById("issueType").firstChild) {
         document
             .getElementById("issueType")
