@@ -1,0 +1,55 @@
+body {
+    font-family: "Dosis", sans-serif;
+
+    margin: 0px;
+}
+
+#wrapper {
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.selection1 {
+    align-self: center;
+    width: 30vw;
+    margin: 5vh 5vw;
+}
+
+.selection2 {
+    align-self: center;
+    width: 30vw;
+    margin: 5vh 5vw;
+}
+
+.urlBox {
+    align-self: center;
+    width: 30vw;
+    margin: 5vh 5vw;
+}
+
+.buttonBox {
+    align-self: center;
+    width: 15vw;
+    margin: 15vh 5vw;
+    margin-bottom: 5vh;
+}
+
+.textArea {
+    height: 10vh;
+    margin-left: 20px;
+}
+
+textarea {
+    width: 400px;
+}
+
+.label {
+    margin-left: 20px;
+}
+
+#url {
+    width: 400px;
+}
