@@ -1,23 +1,23 @@
 const citizen = [
-    "privacy",
-    "incorrect information",
-    "information hard to find",
+    "Privacy",
+    "Incorrect information",
+    "Information hard to find",
     "Recognition of diplomas (to take up work)",
     "Healthcare",
-    "other"
+    "Other"
 ];
 
 const consumer = [
-    "personal infos not accepted",
+    "Personal infos not accepted",
     "Unemployment benefits",
     "Discriminatory fees (tourism)",
-    "other"
+    "Other"
 ];
 
 const business = [
     "Equal access for doing business",
     "Access to single market to sell products",
-    "other"
+    "Other"
 ];
 
 chrome.tabs.query({ active: true, lastFocusedWindow: true }, tabs => {

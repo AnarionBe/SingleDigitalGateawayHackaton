@@ -64,6 +64,7 @@ textarea {
     height: 40px;
     border-radius: 10px;
     padding: 5px;
+    background-color: white;
 }
 
 #issueType {
@@ -71,6 +72,7 @@ textarea {
     border-radius: 10px;
     padding: 5px;
     display: none;
+    background-color: white;
 }
 
 #description {
@@ -87,4 +89,5 @@ button {
     width: 100px;
     background-color: #004494;
     border-color: #004494;
+    font-size: 15px;
 }
