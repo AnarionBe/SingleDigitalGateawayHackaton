@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <title>Type of user</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Custom styles for this template -->
+        <link href="css/simple-sidebar.css" rel="stylesheet" />
+        <link href="style.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Dosis"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <div class="d-flex flex-column" id="wrapper">
+            <div class="urlBox">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Website URL</span>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="https://www.example.com"
+                        id="url"
+                    />
+                </div>
+            </div>
+            <div class="selection1">
+                <select class="custom-select" id="userType">
+                    <option selected>Who are you ?</option>
+                    <option value="1">Consumer</option>
+                    <option value="2">Citizen</option>
+                    <option value="3">Business</option>
+                </select>
+            </div>
+
+            <div class="selection2">
+                <select class="custom-select" id="issueType"> </select>
+            </div>
+
+            <label class="label" for="exampleFormControlTextarea1"
+                >Obstacle description</label
+            >
+            <div class="form-group textArea">
+                <textarea
+                    class="form-control rounded-0"
+                    id="exampleFormControlTextarea1"
+                    rows="5"
+                ></textarea>
+            </div>
+            <br /><br />
+
+            <div class="buttonBox">
+                <a href="./ExtensionPage2(Submit).html"
+                    ><button
+                        type="button"
+                        class="btn btn-secondary btn-lg btn-block"
+                    >
+                        Submit
+                    </button></a
+                >
+            </div>
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="index.js"></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+        </script>
+    </body>
+</html>
